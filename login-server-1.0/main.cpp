@@ -31,7 +31,7 @@ void destroy(short exit_num);
 
 int main()
 {
-	system("TITLE Login server 1.0 ( BETA 2.0 )");
+	system("TITLE Login server 1.0");
 
 	std::cout
 		<< "============================================================\n"
@@ -87,6 +87,8 @@ int main()
 	stop = clock();
 
 	std::cout << "SERVER  " << "\t" << "STARTED IN " << (double) (stop - start) / 1000 << " SEC ( " << SERVER_IP << " " << SERVER_PORT << " )\n\n";
+
+	_beginthread((void(__cdecl*)(void*)) commands, 0, (void*) 0);
 
 	int ls_result = 0, sin_size = 0;
 
