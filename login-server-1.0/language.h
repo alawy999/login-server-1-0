@@ -4,7 +4,7 @@
 class __language
 {
 public:
-	static __declspec(dllexport) std::string *assign(std::string pro_sec);
+	std::string *assign(std::string pro_sec);
 };
 
 #endif language_h
