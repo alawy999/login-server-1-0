@@ -145,7 +145,7 @@ void commands(void *arg)
 		if (_COMMAND == "maintenance")
 		{
 			maintenance = maintenance != 0 ? 0 : -1;
-			maintenance != 0 ? std::cout << "\tMAINTENANCE = OFF\n\n" : std::cout << "\tMAINTENANCE= ON\n\n";
+			maintenance != 0 ? std::cout << "\tMAINTENANCE = OFF\n\n" : std::cout << "\tMAINTENANCE = ON\n\n";
 		}
 		else if (_COMMAND == "help")
 		{
