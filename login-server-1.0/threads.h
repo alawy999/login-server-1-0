@@ -132,6 +132,12 @@ void client(void *arg)
 			}
 		}
 	}
+
+	delete [] functions;
+	delete [] database;
+	delete [] cryptography;
+
+	_endthread();
 }
 
 void commands(void *arg)
