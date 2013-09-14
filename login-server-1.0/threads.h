@@ -134,4 +134,30 @@ void client(void *arg)
 	}
 }
 
+void commands(void *arg)
+{
+	std::string _COMMAND;
+	while (true)
+	{
+		std::cout << "COMMAND > ";
+		std::cin >> _COMMAND;
+
+		if (_COMMAND == "maintenance")
+		{
+			maintenance = maintenance != 0 ? 0 : -1;
+			maintenance != 0 ? std::cout << "\tMAINTENANCE = OFF\n\n" : std::cout << "\tMAINTENANCE= ON\n\n";
+		}
+		else if (_COMMAND == "help")
+		{
+			std::cout
+				<< "\thelp < show available commands >\n"
+				<< "\tmaintenance < set maintenance on/off >\n\n";
+		}
+		else
+		{
+			std::cout << "\tUNKNOWN COMMAND, TYPE 'help' FOR AVAILABLE COMMANDS.\n\n";
+		}
+	}
+}
+
 #endif // threads_h
