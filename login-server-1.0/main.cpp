@@ -111,14 +111,13 @@ int main()
 		else std::cout << "COULD NOT LISTEN ON " << SERVER_IP << ":" << SERVER_PORT << "\n";
 	}
 
-  WSACleanup();
-  
+	WSACleanup();
 	destroy(0);
 }
 
 void destroy(short exit_num)
 {
-  delete [] string;
+	delete [] language_srv;
 	system("pause");
 	exit(exit_num);
 }
