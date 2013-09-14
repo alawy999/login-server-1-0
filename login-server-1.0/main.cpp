@@ -119,7 +119,6 @@ int main()
 
 void destroy(short exit_num)
 {
-	delete [] language_srv;
 	system("pause");
 	exit(exit_num);
 }
