@@ -32,5 +32,7 @@ std::string *__language::assign(std::string pro_sec)
 	for (short i = 0; i < 7; i++)
 		temp[i] = cryptography->encrypter(temp[i]);
 
+	delete [] cryptography;
+
 	return temp;
 }
